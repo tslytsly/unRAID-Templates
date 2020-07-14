@@ -12,7 +12,7 @@
   <Overview>Technitium DNS Server is an open source tool that can be used for self hosting a local DNS server for privacy and security or, used for experimentation/testing by software developers on their computer. It works out-of-the-box with no or minimal configuration and provides a user friendly web console accessible using any web browser.</Overview>
   <Category>Network:DNS Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:5380]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/ts-dnsserver.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/tslytsly/unRAID-Templates/master/ts-docker.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/Technitium.png</Icon>
   <Date>2020-01-04</Date>
   <Config Name="App data" Target="/config" Default="/mnt/user/appdata/ts-dnsserver" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ts-dnsserver</Config>
