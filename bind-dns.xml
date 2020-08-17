@@ -11,12 +11,12 @@
   <Project>https://www.github.com/sameersbn/docker-bind</Project>
   <Overview>BIND is open source software that implements the Domain Name System (DNS) protocols for the Internet. It is a reference implementation of those protocols, but it is also production-grade software, suitable for use in high-volume and high-reliability applications. Webmin is included to manage the server</Overview>
   <Category>Network:DNS</Category>
-  <WebUI>http://[IP]:[PORT:10000]</WebUI>
+  <WebUI>https://[IP]:[PORT:10000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/tslytsly/unRAID-Templates/master/bind-dns.xml</TemplateURL>
   <Icon></Icon>
   <Date>2020-08-17</Date>
   <Config Name="App data" Target="/config" Default="/mnt/user/appdata/bind-dns" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bind-dns</Config>
-  <Config Name="Web UI" Target="10000" Default="10000" Mode="tcp" Description="Container Port: " Type="Port" Display="always" Required="false" Mask="false">10000</Config>
+  <Config Name="Web UI" Target="10000" Default="10000" Mode="tcp" Description="Container Port: 10000" Type="Port" Display="always" Required="false" Mask="false">10000</Config>
   <Config Name="DNS Port" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="false" Mask="false">53</Config>
   <Config Name="DNS Port" Target="53" Default="53" Mode="tcp" Description="Container Port: 53" Type="Port" Display="always" Required="false" Mask="false">53</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID 99" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
